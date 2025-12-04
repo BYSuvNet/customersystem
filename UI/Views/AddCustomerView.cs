@@ -4,6 +4,8 @@ namespace CustomerSystem.UI.Views;
 
 public class AddCustomerView : IView
 {
+    public string Title { get => "Visa alla kunder"; }
+
     public void Show()
     {
         Console.WriteLine("-- LÄGG TILL KUND --\n");
