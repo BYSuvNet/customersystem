@@ -23,7 +23,8 @@ public class InMemoryCustomerRepository : ICustomerRepository
 
     public void Add(Customer customer)
     {
-        throw new NotImplementedException();
+        customer.Id = Random.Shared.Next();
+        _customers.Add(customer);
     }
 
     public IEnumerable<Customer> GetAll()
