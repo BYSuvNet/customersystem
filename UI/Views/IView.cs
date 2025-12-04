@@ -1,0 +1,4 @@
+interface IView
+{
+    void Show();
+}
