@@ -5,14 +5,14 @@ namespace CustomerSystem.UI.Views;
 
 public class ListAllCustomersView(ICustomerRepository repo) : IView
 {
-    ICustomerRepository customerRepo = repo;
+    private readonly ICustomerRepository customerRepo = repo;
 
     public void Show()
     {
         Console.Clear();
         Console.WriteLine("-- ALLA KUNDER: --");
 
-        IEnumerable<Customer> customers = repo.GetAll();
+        IEnumerable<Customer> customers = customerRepo.GetAll();
 
         if (!customers.Any())
         {
