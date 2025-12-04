@@ -34,6 +34,10 @@ public class RemoveCustomerView(ICustomerRepository repo) : IView
             // Eller mer kompakt:
             //customerRepo.Remove(customers.ToList()[selected].Id);
         }
+        else
+        {
+            Console.WriteLine("Avbryter, tryck på enter för att fortsätta.");
+        }
 
         Console.ReadLine();
     }
