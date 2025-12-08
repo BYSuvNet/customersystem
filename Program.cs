@@ -4,7 +4,9 @@ using CustomerSystem.UI.Views;
 
 ICustomerRepository customerRepository = new InMemoryCustomerRepository();
 
-IView[] views = [new AddCustomerView(), new ListAllCustomersView(customerRepository), new RemoveCustomerView(customerRepository)];
+IView[] views = [new AddCustomerView(),
+                 new ListAllCustomersView(customerRepository),
+                 new RemoveCustomerView(customerRepository)];
 
 while (true)
 {

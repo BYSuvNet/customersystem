@@ -7,7 +7,7 @@ public class ListAllCustomersView(ICustomerRepository repo) : IView
 {
     private readonly ICustomerRepository customerRepo = repo;
 
-    public string Title { get => "Visa alla kunder"; }
+    public string Title => "Visa alla kunder";
 
     public void Show()
     {

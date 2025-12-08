@@ -6,6 +6,8 @@ public class RemoveCustomerView(ICustomerRepository repo) : IView
 {
     ICustomerRepository customerRepo = repo;
 
+    public string Title => "Ta bort kund";
+
     public void Show()
     {
         IEnumerable<Customer> customers = customerRepo.GetAll();

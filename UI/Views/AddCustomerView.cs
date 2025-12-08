@@ -4,7 +4,7 @@ namespace CustomerSystem.UI.Views;
 
 public class AddCustomerView : IView
 {
-    public string Title { get => "Visa alla kunder"; }
+    public string Title => "Visa alla kunder";
 
     public void Show()
     {
