@@ -2,6 +2,8 @@ using CustomerSystem.Core.Entities;
 using CustomerSystem.Core.Interfaces;
 using CustomerSystem.UI;
 
+namespace CustomerSystem.UI.Views;
+
 public class RemoveCustomerView(ICustomerRepository repo) : IView
 {
     ICustomerRepository customerRepo = repo;
