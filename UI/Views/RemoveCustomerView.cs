@@ -6,7 +6,7 @@ public class RemoveCustomerView(ICustomerRepository repo) : IView
 {
     ICustomerRepository customerRepo = repo;
 
-    public string Title => "Ta bort kund";
+    public string Title => "Radera kunder";
 
     public void Show()
     {
