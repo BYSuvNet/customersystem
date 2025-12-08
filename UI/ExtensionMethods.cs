@@ -1,4 +1,4 @@
-namespace CustomerSystem.UI;
+namespace CustomerSystem.UI.Views;
 
 // Istället för att lägga denna kod i meny-koden så gör jag det som en extensionmetohod som kan köras på listor med IView.
 // Detta för att hålla meny-koden renare och mer fokuserad på just menyn, och inte blanda in IViews.
@@ -14,5 +14,8 @@ public static class ExtensionMethods
             titles[i] = views[i].Title;
         }
         return titles;
+
+        //Samma med LINQ:
+        //return views.Select(v => v.Title).ToArray();
     }
 }
