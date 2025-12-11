@@ -15,7 +15,7 @@ internal class Program
 
         while (true)
         {
-            int choice = ArrowMenu.Show("Huvudmeny", views.TitlesToStringArray()); //En extension method, se EntensionMethods.cs
+            int choice = ArrowMenu.Show("Huvudmeny", views.TitlesToStringArray(), "Avsluta"); //En extension method, se EntensionMethods.cs
 
             if (choice == -1) break;
 

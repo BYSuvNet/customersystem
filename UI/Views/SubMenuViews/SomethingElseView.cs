@@ -6,6 +6,8 @@ public class SomethingElseView : IView
 
     readonly string content = """
         Här kan vi göra något annat en i den första vyn.
+
+        Tryck på valfri knapp för att gå tillbaka.
         """;
 
     public void Show()

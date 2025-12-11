@@ -4,7 +4,7 @@ namespace CustomerSystem.UI.Views;
 
 public class SubMenuView : IView
 {
-    public string Title => "-- En undermeny --";
+    public string Title => "Ett val med undermeny";
 
     IView[] views = [new SomethingView(),
                  new SomethingElseView()];
@@ -13,7 +13,7 @@ public class SubMenuView : IView
     {
         while (true)
         {
-            int choice = ArrowMenu.Show("Undermeny: ", views.TitlesToStringArray()); //En extension method, se EntensionMethods.cs
+            int choice = ArrowMenu.Show("Undermeny: ", views.TitlesToStringArray(), "Tillbaka <<"); //En extension method, se EntensionMethods.cs
 
             if (choice == -1) break; //Break kommer att avbryta show och därmed återgå till den tidigare vyn
 
