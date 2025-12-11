@@ -24,7 +24,7 @@ public class RemoveCustomerView(ICustomerRepository repo) : IView
         //Alternativ med LINQ
         //string[] customerNamesArray = customers.Select(c => c.Name.Full).ToArray();
 
-        int selected = ArrowMenu.Show("Kunder", customerNames.ToArray());
+        int selected = ArrowMenu.Show("Kunder", [.. customerNames]);
 
         if (selected >= 0)
         {
